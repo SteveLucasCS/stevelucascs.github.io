@@ -1,56 +1,81 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto');
-
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
 body {
-  background-color: #efeee7;
-  font-family: 'Roboto', sans-serif;
-  color: #333333;
-  margin: 0;
-  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: grey;
+}
+.navbar {
+  padding: 0 10%;
 }
 
 main {
   width: 90%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.container-20 {width: 20%; float: left; margin-top: 2em;}
-.container-20 h2 {margin-top: 0;}
-
-.container-80 {width: 80%; float: right; margin-top: 2em}
-
-#contact-info {float: left; width: auto; font-weight: bold; font-size: 0.8em;}
-#contact-info a:link {color: #9767b2;}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#bio-image {
-  
-  width: 70%;
-  max-width: 300px;
-  height: auto;
+  padding: 0 5%;
   margin: auto;
-  
+  background-color: #ffffff;
 }
 
 header {
-  background-color: #7C6886;
-  padding: 0.5em;
-  margin: 0;
-  text-align: center;
-  width: 100%;
+  padding: 1em 0;
+  border-bottom: solid black thin;
+  margin:  0 0 2em 0;
 }
 
-h1 {color: #eee; font-size: 28px; font-family: 'Merriweather', sans-serif;}
+#portrait {
+  width: 70%;
+  margin: auto;
+}
 
-h2 {font-size: 24px; font-family: 'Merriweather', sans-serif;}
+.navbar-brand {
+  background-color: rgb(0, 224, 198);
+  margin: 0;
+  padding: 0.5em 0.5em;
+}
 
-h3 {margin-top: 0em;}
+#navbarNav {
+  justify-content: flex-end;
+}
+.card-img-top {
+  width: 100%rem;
+  height: 13rem;
+}
 
-h4 {font-size: 1.3em;}
-table td {padding: 0.2em; padding-right: 1em;}
-table th {text-align: left;}
-table { width: 100%; margin-bottom: 2em;}
+
+h2 {
+  font-size: 1.5em;
+}
+
+i {
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  padding-top: 2em;
+  background-color: #ffffff;
+  width: 90%;
+  margin: auto;
+}
+footer p {
+  font-style: italic;
+}
+footer a {
+  color:  rgb(0, 224, 198);
+}
+
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 70%;
+  }
+  footer {
+    width: 70%;
+    margin: auto;
+  }
+  .navbar {
+    padding: 0 20%;
+  }
+  
+
+}  
+
