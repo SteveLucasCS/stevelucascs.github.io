@@ -36,10 +36,7 @@ header {
 #navbarNav {
   justify-content: flex-end;
 }
-.card-img-top {
-  width: 100%rem;
-  height: 13rem;
-}
+
 
 
 h2 {
@@ -63,8 +60,24 @@ footer a {
   color:  rgb(0, 224, 198);
 }
 
+.card {
+  margin-bottom: 1.5rem !important;
+  width: 100%;
+  min-width: 100%;
+}
+.card-title {
+  margin-bottom: 0;
+  text-align: center;
+}
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 690px) {
+  .card {
+    min-width: 45%;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   main {
     width: 70%;
   }
@@ -72,10 +85,14 @@ footer a {
     width: 70%;
     margin: auto;
   }
+
+  .card {
+    min-width: 30%;
+    width: 32%;
+  }
+  
   .navbar {
     padding: 0 20%;
   }
-  
 
-}  
-
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio | Steve Lucas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="card-deck">
+      <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="images/placeholder.png'" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">1 Card title</h4>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="images/placeholder.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">2 Card title</h4>
+        </div>
+      </div>
+      <div class="w-100 d-none d-sm-block d-md-none">
+        <!-- wrap every 2 on sm-->
+      </div>
+      <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="images/placeholder.png'" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">3 Card title</h4>
+        </div>
+      </div>
+      <div class="w-100 d-none d-md-block d-lg-none">
+        <!-- wrap every 3 on md-->
+      </div>
+      <div class="card mb-4">
+        <img class="card-img-top img-fluid" src="images/placeholder.png'" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">4 Card title</h4>
+        </div>
+      </div>
+      <div class="w-100 d-none d-sm-block d-md-none">
+        <!-- wrap every 2 on sm-->
+      </div>
+      <div class="w-100 d-none d-lg-block d-xl-none">
+        <!-- wrap every 4 on lg-->
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Thank You for Visiting My Portofolio</p>
+    <a href="about.html">About | </a>
+    <a class="active" href="portfolio.html">Portfolio | </a>
+    <a href="contact.html">Contact</a>
+  </footer>
+
+  <script>
+    $("#card-1-btn").on("click", function () {
+      window.open("https://stevelucascs.github.io/Hangman/");
+    });
+    $("#card-2-btn").on("click", function () {
+      window.open("https://stevelucascs.github.io/websiteProject/");
+    });
+    $("#card-3-btn").on("click", function () {
+      window.open("https://stevelucascs.github.io/websiteProject/fitness/");
+    });
+    $("#card-4-btn").on("click", function () {
+      window.open("https://stevelucascs.github.io/websiteProject/portfolio/");
+    });
+  </script>
+</body>
+
+</html>
