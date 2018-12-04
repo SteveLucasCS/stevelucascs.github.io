@@ -35,16 +35,26 @@ header {
 .row {
   margin: 0;
 }
-#dropdownMenuLink,
-.dropdown-toggle,
+
 .btn-primary {
   background-color: #4E2A84;
   border-color: #310c68;
 }
-.dropdown-toggle:focus,
+
 .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem #977cbf !important;
 }
+#dropdownMenuLink,
+.dropdown-toggle,
+.btn-dark {
+  background-color:#6b6b6b;
+  border-color: #444444;
+}
+.dropdown-toggle:focus,
+.btn-dark:focus {
+  box-shadow: 0 0 0 0.2rem #b7b7b7 !important;
+}
+
 #portrait {
   width: 100%;
   margin: auto;
@@ -145,6 +155,12 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .navbar-content {
+    padding: 0.25em 0;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   footer,
   .navbar-content,
@@ -153,3 +169,5 @@ footer a:hover {
     max-width: 1140px !important;
   }
 }
+
+
