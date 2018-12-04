@@ -1,0 +1,22 @@
+
+.content-container {
+  padding: 0;
+}
+.jumbotron-fluid {
+  width: 100%;
+  padding: 1em;
+  background: transparent;
+}
+.jumbotron-fluid .container {
+  padding: 0;
+}
+.card-deck {
+  margin: auto;
+  justify-content: space-between;
+}
+.card {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0.5em 1em;
+  border: none;
+}

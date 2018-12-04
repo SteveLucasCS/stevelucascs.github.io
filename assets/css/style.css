@@ -1,0 +1,144 @@
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.navbar-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0.25em 1em;
+}
+
+main {
+  width: 100%;
+  min-height: 80vh;
+  padding: 0 0 2em 0;
+  margin: auto;
+  background-color: #ffffff;
+}
+.content-container {
+  margin: auto;
+}
+
+header {
+  padding: 1em 0;
+  border-bottom: solid #977cbf thin;
+  margin:  0 0 1em 0;
+}
+
+.row {
+  margin: 0;
+}
+#dropdownMenuLink,
+.dropdown-toggle,
+.btn-primary {
+  background-color: #4E2A84;
+  border-color: #310c68;
+}
+.dropdown-toggle:focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #977cbf !important;
+}
+#portrait {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #4E2A84 !important;
+  color: #ffffff;
+}
+.navbar-brand {
+  margin: 0;
+  font-size: 1.5em;
+  padding: 0;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 0;
+  background-color: #ffffff;
+  width: 100%;
+  margin: auto;
+  position: static;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer p {
+  font-style: italic;
+  margin-top: 0;
+}
+
+footer a,
+footer a:visited,
+footer a:link {
+  color: #4E2A84;
+  text-decoration: none !important;
+  font-size: 1.2em;
+  padding: 0.1em 0.5em;
+  margin: 0;
+}
+
+footer a:focus,
+footer a:active,
+footer a:hover {
+  color: #977cbf;
+  font-weight: bold;
+}
+
+.side-borders {
+  border-left: solid #977cbf thin;
+  border-right: solid #977cbf thin;
+}
+
+.card {
+  margin-bottom: 1.5rem !important;
+  width: 100%;
+  min-width: 100%;
+}
+.card-title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 690px) {
+  .card {
+    min-width: 45%;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-content,
+  main,
+  .content-container {
+    max-width: 960px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer,
+  .navbar-content,
+  main {
+    width: 80%;
+    max-width: 1140px !important;
+  }
+}
