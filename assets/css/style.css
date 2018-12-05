@@ -1,9 +1,14 @@
 /* Import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
-
+:root {
+  --lightgrey: #fcf7ff;
+}
+* {
+  background: transparent;
+}
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--lightgrey);
   min-height: 100vh;
 }
 
@@ -20,7 +25,7 @@ main {
   min-height: 80vh;
   padding: 0 0 2em 0;
   margin: auto;
-  background-color: #ffffff;
+  background-color: var(--lightgrey);
 }
 .content-container {
   margin: auto;
@@ -34,23 +39,47 @@ header {
 
 .row {
   margin: 0;
+  max-width: 100% !important;
 }
 
+.text-link {
+  color: #4E2A84 !important;
+  text-decoration: underline;
+}
+.text-link:hover,
+.text-link:active,
+.text-link:focus {
+  font-weight: bold;
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 .btn-primary {
   background-color: #4E2A84;
   border-color: #310c68;
+  color: #ffffff;
+
 }
 
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active {
   box-shadow: 0 0 0 0.2rem #977cbf !important;
+  background-color: #310c68 !important;
+  transition: none;
 }
-#dropdownMenuLink,
+
 .dropdown-toggle,
 .btn-dark {
   background-color:#6b6b6b;
   border-color: #444444;
 }
-.dropdown-toggle:focus,
+
+.btn-dark:active,
+.btn-dark:hover,
 .btn-dark:focus {
   box-shadow: 0 0 0 0.2rem #b7b7b7 !important;
 }
@@ -83,7 +112,6 @@ h2 {
 footer {
   text-align: center;
   padding: 0;
-  background-color: #ffffff;
   width: 100%;
   margin: auto;
   position: static;
@@ -136,8 +164,15 @@ footer a:hover {
   box-shadow: 0px 0px 5px 5px #977cbf;
 }
 
+.shadow-grey {
+  box-shadow: 0px 0px 5px 5px #bcb7b7 !important;
+  background: #ffffff;
+}
 .no-shadow {
   box-shadow: none !important;
+}
+.card-deck {
+  padding: 0 15px;
 }
 
 @media only screen and (min-width: 690px) {
