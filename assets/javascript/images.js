@@ -1,7 +1,8 @@
 const targetArray = $(".res-img");
+const breakpoint = 660;
 var isMobile = true;
 
-$(window).width() < 660 ? isMobile = true : isMobile = false;
+$(window).width() < breakpoint ? isMobile = true : isMobile = false;
 
 function setImages() {
   if (isMobile) {
@@ -21,11 +22,11 @@ setImages();
 $(document).ready(function() {
   $(window).resize(function() {
     //if the viewport changes from mobile to large or visa versa, setImage()
-    if ($(window).width() < 660 && isMobile === false) {
+    if ($(window).width() < breakpoint && isMobile === false) {
       isMobile = true;
       setImages();
     }
-    if ($(window).width() >= 660 && isMobile === true) {
+    if ($(window).width() >= breakpoint && isMobile === true) {
       isMobile = false;
       setImages();
     }

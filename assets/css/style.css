@@ -175,7 +175,7 @@ footer a:hover {
   padding: 0 15px;
 }
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 660px) {
   .card {
     min-width: 45%;
     width: 45%;
